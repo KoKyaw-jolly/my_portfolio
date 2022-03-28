@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+  <!-- navbar -->
+    <div class="nav-content bg-light shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+              <button class="navbar-toggler navbar-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#">About me</a>
+                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#">Skill And Tools</a>
+                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#">Projects</a>
+                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#">Contact Me</a>
+                </div>
+              </div>
+              <button class="themes-btn">
+                  <i class="fa fa-moon-o" style="font-size: 2rem;"></i>
+              </button>
+            </div>
+        </nav>
+    </div>
+  <!-- navbar end -->
+  <br>
+  <!-- Content -->
+    <div id="main-content">
+      <!-- home main -->
+        <div id="home" class="row flex-md-row-reverse mt-rem">
+          <div class="col-sm-12 col-md-6">
+            <img src="src/image/hello_character.svg" alt="">
+          </div>
+          
+          <div class="col-sm-12 col-md-6 d-sm-flex align-items-md-center justify-content-sm-center justify-content-md-start mt-3 mt-sm-5 mt-md-0">
+            <div class="hello-second-container">
+              <h1 class="hello-name">Hello! I'm <br>KO KO KYAW</h1>
+              <div class="hello-span mx-auto mx-sm-0"></div>
+              <div class="position-container">
+                <h1 class="hello-position1">Front-End Developer</h1>
+                <h1 class="hello-position2">UI/UX Designer</h1>
+              </div>
+              <ul class="hello-contant-group">
+                <li class="text-center">
+                  <a href="" class="align-self-center"><i class="fa fa-envelope"></i></a>
+                </li>
+                <li class="text-center">
+                  <a href="" class="align-self-center"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="text-center">
+                  <a href="" class="align-self-center"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="text-center">
+                  <a href="" class="align-self-center"><i class="fa fa-instagram"></i></a>
+                </li>
+              </ul>
+              <button class="common-btn shadow-sm center-btn d-block mx-auto mx-md-0">Contact Me</button>
+            </div>
+          </div>
+        </div>
+      <!-- home main end -->
+      <br>
+      <!-- about me -->
+        <!-- <div class="row mt-5 mt-md-3">
+          <div class="col-sm-12 col-md-6 about-photo-group">
+            <div style="text-align: center;">
+              <img src="src/image/p_photo.jpg" class="about-photo">
+              <img src="src/image/p_photo_S.svg" class="about-photo-s">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 about-text-group">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur adipisci quod quas dolor molestiae, facilis iusto nulla mollitia non beatae quisquam eligendi incidunt cupiditate sequi voluptates similique, blanditiis eum corporis!</p>
+            <button class="common-btn shadow-sm center-btn d-block mx-md-0">Download CV</button>
+          </div>
+        </div> -->
+
+        
+        <div class="row mt-5rem">
+          <div class="col-sm-12 col-md-6 about-photo-group">
+            <div style="text-align: center;">
+              <img src="src/image/p_photo.jpg" class="about-photo">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 about-text-group">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur adipisci quod quas dolor molestiae, facilis iusto nulla mollitia non beatae quisquam eligendi incidunt cupiditate sequi voluptates similique, blanditiis eum corporis!</p>
+            <button class="common-btn shadow-sm center-btn d-block mx-md-0">Download CV</button>
+          </div>
+        </div>
+
+
+      <!-- about me end -->
+      <br>
+      <!-- skill tool -->
+        <div class="row tools-container flex-md-row-reverse mt-5rem">
+          <div class="col-sm-12 col-md-6 about-photo-group">
+            <img src="src/image/tools.svg">
+          </div>
+          <div class="col-sm-12 col-md-6 tool-text-group">
+            <h1>Skill And Tools</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur adipisci quod quas dolor molestiae, facilis iusto nulla mollitia non beatae quisquam eligendi incidunt cupiditate sequi voluptates similique, blanditiis eum corporis!</p>
+          </div>
+        </div>
+      <!-- skill tool end -->
+      <br>
+      <!-- demo project -->
+      <div class="container-fluid  mt-5rem">
+        <div class="row prj-wapper col-sm-12 shadow-lg">
+          <div class="col-sm-12 prj-header">
+            <h1>Sample Project Demo</h1>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 card-wapper">
+            <div class="card shadow-sm" style="max-width:30rem;">
+              <img src="src/image/prj_card.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectet adipisicing elit. Laudantium rerum alias perspiciatis natus dolorem, sint ipsum.</p>
+                  <button class="common-btn shadow-sm center-btn d-block mx-md-0">See Demo</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 card-wapper">
+            <div class="card shadow-sm" style="max-width:30rem;">
+              <img src="src/image/prj_card.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectet adipisicing elit. Laudantium rerum alias perspiciatis natus dolorem, sint ipsum.</p>
+                  <button class="common-btn shadow-sm center-btn d-block mx-md-0">See Demo</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 card-wapper">
+            <div class="card shadow-sm" style="max-width:30rem;">
+              <img src="src/image/prj_card.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectet adipisicing elit. Laudantium rerum alias perspiciatis natus dolorem, sint ipsum.</p>
+                  <button class="common-btn shadow-sm center-btn d-block mx-md-0">See Demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- demo project end -->
+      <br>
+      <!-- contact me start -->
+      <div class="container-fluid  mt-5rem">
+        <div class="row prj-wapper col-sm-12 shadow-lg">
+          <div class="col-sm-12 prj-header">
+            <h1>Contact Me</h1>
+          </div>
+          <div class="col-sm-12 col-xl-4 row">
+            <div class="row">
+              <div class="contact-info-container col-12 col-sm-6 col-xl-12">
+                <span class="info-icon d-none d-md-block">
+                  <i class="fa fa-user"></i>
+                </span>
+                <div class="info-text-gp">
+                  <p>Name</p>
+                  <p>Ko Ko Kyaws</p>
+                </div>
+              </div>
+              <div class="contact-info-container col-12 col-sm-6 col-xl-12">
+                <span class="info-icon d-none d-md-block">
+                  <i class="fa fa-phone"></i>
+                </span>
+                <div class="info-text-gp">
+                  <p>Phone Number</p>
+                  <p style="font-family: system-ui; font-weight: 600;">+95 9780397242</p>
+                </div>
+              </div>
+              <div class="contact-info-container col-12 col-sm-6 col-xl-12">
+                <span class="info-icon d-none d-md-block">
+                  <i class="fa fa-envelope" style="font-size: 40px;"></i>
+                </span>
+                <div class="info-text-gp">
+                  <p>Gmail</p>
+                  <p>kokyaw264.mm@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 mb-3 mb-xl-0">
+              <span class="col contact-link-icon">
+                <a href="" class="align-self-center"><i class="fa fa-linkedin"></i></a>
+              </span>
+              <span class="col contact-link-icon">
+                <a href="" class="align-self-center"><i class="fa fa-facebook"></i></a>
+              </span>
+              <span class="col contact-link-icon">
+                <a href="" class="align-self-center"><i class="fa fa-instagram"></i></a>
+              </span>
+            </div>
+          </div>
+          <div class="col-sm-12 col-xl-8">
+            <form class="row g-3">
+              <div class="col-sm-12 col-md-6">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name">
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address">
+              </div>
+              <!-- <div class="col-sm-12">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" placeholder="Subject" aria-label="Subject">
+              </div> -->
+              <div class="col-sm-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <div class="col-12">
+                <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+                <button class="common-btn shadow-sm mt-1">Download CV</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- contact me end -->
+    </div>
+  <!-- Content end-->
+</body>
+</html>
