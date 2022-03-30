@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ko Ko Kyaw</title>
     <link rel="stylesheet" href="style.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
@@ -19,24 +19,26 @@
               </button>
               <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#">About me</a>
-                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#">Skill And Tools</a>
-                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#">Projects</a>
-                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#">Contact Me</a>
+                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#about_me">About me</a>
+                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#skill_tool">Skill And Tools</a>
+                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#demo_project">Projects</a>
+                  <a class="nav-link mx-lg-4 mx-md-3 mx-sm-2" href="#contact_me">Contact Me</a>
                 </div>
               </div>
-              <button class="themes-btn">
-                  <i class="fa fa-moon-o" style="font-size: 2rem;"></i>
+              <button id="testbtn" class="themes-btn" onclick="theme_click()">
+                <i id="moon" class="fa fa-sun-o" style="font-size: 2rem; color: #e6fffe;display: none;"></i>
+                <i id="sun" class="fa fa-moon-o" style="font-size: 2rem;"></i>
               </button>
             </div>
         </nav>
     </div>
   <!-- navbar end -->
-  <br>
-  <!-- Content -->
+  <section>
+    <br>
+    <!-- Content -->
     <div id="main-content">
       <!-- home main -->
-        <div id="home" class="row flex-md-row-reverse mt-rem">
+        <div id="home" class="row flex-md-row-reverse mt-rem reveal fade-top">
           <div class="col-sm-12 col-md-6">
             <img src="src/image/hello_character.svg" alt="">
           </div>
@@ -63,58 +65,43 @@
                   <a href="" class="align-self-center"><i class="fa fa-instagram"></i></a>
                 </li>
               </ul>
-              <button class="common-btn shadow-sm center-btn d-block mx-auto mx-md-0">Contact Me</button>
+              <a href="#contact_me" class="common-btn contact-btn shadow-sm center-btn d-block mx-auto mx-md-0">Contact Me</a>
+              <!-- <button class="common-btn shadow-sm center-btn d-block mx-auto mx-md-0"><a href="#contact_me">Contact Me</a></button> -->
             </div>
           </div>
         </div>
       <!-- home main end -->
       <br>
-      <!-- about me -->
-        <!-- <div class="row mt-5 mt-md-3">
-          <div class="col-sm-12 col-md-6 about-photo-group">
-            <div style="text-align: center;">
-              <img src="src/image/p_photo.jpg" class="about-photo">
-              <img src="src/image/p_photo_S.svg" class="about-photo-s">
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 about-text-group">
-            <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur adipisci quod quas dolor molestiae, facilis iusto nulla mollitia non beatae quisquam eligendi incidunt cupiditate sequi voluptates similique, blanditiis eum corporis!</p>
-            <button class="common-btn shadow-sm center-btn d-block mx-md-0">Download CV</button>
-          </div>
-        </div> -->
-
-        
-        <div class="row mt-5rem">
+      <!-- about me -->        
+        <div id="about_me" class="row mt-5rem reveal fade-bottom">
           <div class="col-sm-12 col-md-6 about-photo-group">
             <div style="text-align: center;">
               <img src="src/image/p_photo.jpg" class="about-photo">
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 about-text-group">
+          <div class="col-sm-12 col-md-6 about-text-group mt-5 mt-md-0">
             <h1>About Me</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur adipisci quod quas dolor molestiae, facilis iusto nulla mollitia non beatae quisquam eligendi incidunt cupiditate sequi voluptates similique, blanditiis eum corporis!</p>
             <button class="common-btn shadow-sm center-btn d-block mx-md-0">Download CV</button>
           </div>
         </div>
-
-
       <!-- about me end -->
       <br>
       <!-- skill tool -->
-        <div class="row tools-container flex-md-row-reverse mt-5rem">
+        <div id="skill_tool" class="row tools-container flex-md-row-reverse mt-5rem reveal fade-bottom">
           <div class="col-sm-12 col-md-6 about-photo-group">
             <img src="src/image/tools.svg">
           </div>
-          <div class="col-sm-12 col-md-6 tool-text-group">
+          <div class="col-sm-12 col-md-6 tool-text-group mt-3 mt-md-0">
             <h1>Skill And Tools</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur adipisci quod quas dolor molestiae, facilis iusto nulla mollitia non beatae quisquam eligendi incidunt cupiditate sequi voluptates similique, blanditiis eum corporis!</p>
+            <a href="#contact_me" class="common-btn contact-btn shadow-sm center-btn d-block ">Contact Me</a>
           </div>
         </div>
       <!-- skill tool end -->
       <br>
       <!-- demo project -->
-      <div class="container-fluid  mt-5rem">
+      <div id="demo_project" class="container-fluid  mt-5rem reveal fade-bottom">
         <div class="row prj-wapper col-sm-12 shadow-lg">
           <div class="col-sm-12 prj-header">
             <h1>Sample Project Demo</h1>
@@ -154,7 +141,7 @@
       <!-- demo project end -->
       <br>
       <!-- contact me start -->
-      <div class="container-fluid  mt-5rem">
+      <div id="contact_me" class="container-fluid mt-5rem reveal fade-bottom">
         <div class="row prj-wapper col-sm-12 shadow-lg">
           <div class="col-sm-12 prj-header">
             <h1>Contact Me</h1>
@@ -230,5 +217,10 @@
       <!-- contact me end -->
     </div>
   <!-- Content end-->
+  </section>
+  <br> <br>
+  <div class="footer">
+    <p>Copyright©  2022  All rigths reserved</p>
+  </div>
 </body>
 </html>
